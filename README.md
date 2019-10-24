@@ -18,7 +18,7 @@ pip3 install --user -r requirements.txt
 ## Usage
 
 ```sh
-jupyter-notebook 
+jupyter-notebook BrainTumorsDetector.ipynb 
 ```
 
 ## Result of different algorithms
