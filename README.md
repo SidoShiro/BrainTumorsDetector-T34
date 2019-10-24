@@ -23,7 +23,8 @@ jupyter-notebook
 
 ## Result of different algorithms
 
-* My metric is the **dice score**, unstead of computing a score on raw pixels.
+* My metric is the **dice score**, unstead of computing a score on raw pixels, because there is more zones without
+    tumors than with tumors.
 
 | Algorithm/Technic      | Dice Score |
 |------------------------|------------|
@@ -32,6 +33,8 @@ jupyter-notebook
 | Random Forest          | 0.74029135 |
 
 > Multi Layer Perceptron (Neural Net) was my final choosen model!
+
+![The 4 scans, and the predicted zones of tumors](img/results1.png)
 
 ## DataSet
 
