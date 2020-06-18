@@ -31,20 +31,23 @@ jupyter-notebook BrainTumorsDetector.ipynb
 | SVM (SVC)              | 0.70956521 |
 | Multi Layer Preceptron | 0.74505052 |
 | Random Forest          | 0.74029135 |
+| CatBoost               | 0.70...    |
 
-> Multi Layer Perceptron (Neural Net) was my final choosen model!
+> Multi Layer Perceptron (Neural Net) was fittest model of this study!
 
 ![The 4 scans, and the predicted zones of tumors](img/results1.png)
 
 ## DataSet
 
-Using the **BRATS18 dataset**
+Using the **BRATS18 dataset** form the (Multimodal Brain Tumor Segmentation Challenge 2018)[https://www.med.upenn.edu/sbia/brats2018.html]
 
 4 Types of scans (of brains):
 * T1
 * T1ce
 * T2
 * FLAIR
+
+And the ground truth
 
 ## Authors
 
