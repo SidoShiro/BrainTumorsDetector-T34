@@ -4,6 +4,9 @@ Machine Learning algorithm to detect tumors in medical images of brain slices.
 
 ![Brain tumors](img/tumors.png)
 
+![Samples_Dataset_GD_1](img/sample_1.png)
+
+
 ## Requirements
 
 * Python 3
@@ -21,22 +24,6 @@ pip3 install --user -r requirements.txt
 jupyter-notebook BrainTumorsDetector.ipynb 
 ```
 
-## Result of different algorithms
-
-* My metric is the **dice score**, unstead of computing a score on raw pixels, because there is more zones without
-    tumors than with tumors.
-
-| Algorithm/Technic      | Dice Score |
-|------------------------|------------|
-| SVM (SVC)              | 0.70956521 |
-| Multi Layer Preceptron | 0.74505052 |
-| Random Forest          | 0.74029135 |
-| CatBoost               | 0.70...    |
-
-> Multi Layer Perceptron (Neural Net) was fittest model of this study!
-
-![The 4 scans, and the predicted zones of tumors](img/results1.png)
-
 ## DataSet
 
 Using the **BRATS18 dataset** form the (Multimodal Brain Tumor Segmentation Challenge 2018)[https://www.med.upenn.edu/sbia/brats2018.html]
@@ -49,10 +36,26 @@ Using the **BRATS18 dataset** form the (Multimodal Brain Tumor Segmentation Chal
 
 And the ground truth
 
-## Authors
+![Samples_Dataset_GD_0](img/sample.png)
 
-* SidoShiro
-* Chazalo (Teacher)
+
+
+## Result of different algorithms
+
+* My metric is the **dice score**, unstead of computing a score on raw pixels, because there is more zones without
+    tumors than with tumors.
+
+| Algorithm/Technic      | Dice Score |
+|------------------------|------------|
+| SVM (SVC)              | 0.713      |
+| Multi Layer Preceptron | 0.744      |
+| Random Forest          | 0.727      |
+| CatBoost               | **0.780**  |
+
+> CatBoost seems to win!
+
+![Prediction_with_CatBoost](img/pred_catboost.png)
+
 
 #### PS
 
