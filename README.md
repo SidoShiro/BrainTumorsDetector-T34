@@ -26,7 +26,7 @@ jupyter-notebook BrainTumorsDetector.ipynb
 
 ## DataSet
 
-Using the **BRATS18 dataset** form the (Multimodal Brain Tumor Segmentation Challenge 2018)[https://www.med.upenn.edu/sbia/brats2018.html]
+Using the **BRATS18 dataset** form the [Multimodal Brain Tumor Segmentation Challenge 2018](https://www.med.upenn.edu/sbia/brats2018.html)
 
 4 Types of scans (of brains):
 * T1
@@ -42,8 +42,8 @@ And the ground truth
 
 ## Result of different algorithms
 
-* My metric is the **dice score**, unstead of computing a score on raw pixels, because there is more zones without
-    tumors than with tumors.
+* My metric is the **dice score**, unstead of computing a score on raw pixels, because there is more zones without tumors than with tumors.
+> `Dice score = 2⋅number of true positives / (2⋅number of true positives + number of false positives + number of false negatives)`
 
 | Algorithm/Technic      | Dice Score |
 |------------------------|------------|
